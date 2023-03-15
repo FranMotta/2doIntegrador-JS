@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>E-FROX - COMPRÁ Y VENDÉ</title>
+    <link rel="shortcut icon" href="./asses/img/logo/FROX-BIGLOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asses/style.css">
+    <link rel="stylesheet" href="./asses/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="./asses/img/logo/FROX-1.png" class="logo" alt="E-FROX"></a>
+            </div>
+            <div class="nav-conteiner">
+                <div class="menu-label"><i class="fa-solid fa-bars toggle"></i></div>
+                <ul class="nav-li">
+                    <li><a class="btn-back btn-menu " href="./index.html"><i class="fa-solid fa-circle-arrow-left"></i> Volver</a></li>
+                    <li><button class="btn-category btn-menu ">VENDER</button></li>
+                    <li><button class="btn-category btn-menu "> <a href="login.html" class="login">INICIAR SESIÓN</a></button></li>
+                    <li><button class="btn-category btn-menu "><a href="login.html" class="login"> CREAR CUENTA</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero-card">
+            <div class="hero-title">
+                <h2>¿No te olvidas nada?</h2>
+            </div>
+            <div 
+            class="conteiner-cart">
+                <p id="cart-empty" class="cart-empty">¿NO VAS A COMPRAR NADA? RATÓN <img src="./asses/img/icono/icon-raton.png" alt="mouse" class="mouse"></p>
+                <div id="cart-conteiner" class="cart-conteiner disabled"></div>
+
+                <div id="cart-card" class="cart-card disabled">  
+                    <div class="cart-top">
+                        <button id= "empty-all" class="empty-all">Vaciar</button>
+                    </div>
+                    <div class="cart-bot">
+                        <div class="cart-bottom">
+                                <p>Total:</p>
+                                <p id="total">0</p>
+                        </div>
+                        <div class="btn-continue">
+                            <button id="continue" class="continue">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart-buy"class="continue-shopping disabled">
+                    <p id="cart-buy" class="cart-empty">Gracias por su compra.</p>
+                    <a href="./login.html" id="cart-buy" class="cart-empty">COMPLETA TUS DATOS</a>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-product">
+            <div class="footer-about">
+                <ul>
+                    <li><a href="#">Términos de Uso</a></li>
+                    <li>|</li>
+                    <li><a href="#">Trabajá con Nosotrxs</a></li>
+                    <li>|</li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-copy">   
+                <p>Copyright © 2022 <a href="https://www.instagram.com/franmotta._/">Juan Francisco Motta</a>.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2b2d2d01e5.js" crossorigin="anonymous"></script>
+    <script src="./asses/carrito.js"></script>
+</body>
+</html>

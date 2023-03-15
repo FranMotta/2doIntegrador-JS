@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-FROX - COMPRÁ Y VENDÉ</title>
+        <link rel="shortcut icon" href="./asses/img/logo/FROX-BIGLOGO.png" type="image/x-icon">
+        <link rel="stylesheet" href="./asses/style.css">
+        <link rel="stylesheet" href="asses/mediaqueries.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="./asses/img/logo/FROX-1.png" class="logo" alt="E-FROX"></a>
+            </div>
+            
+                <a class="btn-back btn-menu " href="./index.html"><i class="fa-solid fa-circle-arrow-left"></i>Volver</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="conteiner-login">
+            <div class="store-card" id="store-card">
+                <div id="front-card">
+                    <div class="brand-card" id="brand-card">
+                    </div>
+                    <img src="./asses/img/brandCard/chiptarjeta.png" class="chipcard" alt="">
+                    <div class="data">
+                        <div class="data-card" id="numbercard">
+                            <p class="label">Número de tarjeta</p>
+                            <p id="number-id"></p>
+                        </div>
+                        <div class="name-expiration">
+                            <div class="data-card" class="name-card">
+                                <p class="label">Nombre y Apellido</p>
+                                <p id="name-card"></p>
+                            </div>
+                            <div class="data-card" id="expiration">
+                                <p class="label">Expiration</p>
+                                <p class="expiration"><span class="month"></span>  / <span class="year"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="back-card">
+                    <div class="magnetic-bar"></div>
+                    <div class="data">
+                        <div class="data-card" id="sing">
+                            <p class="label">Firma</p>
+                            <div class="sing"><p></p></div>
+                        </div>
+                        <div class="data-card" id="ccv">
+                            <p class="label">CCV</p>
+                            <p class="ccv"></p>
+                        </div>
+                    </div>
+                    <div class="bot-card">
+                        <img src="./asses/img/logo/FROX-LITTLELOGO.png" alt="" class="littlelogo">
+                        <div class="link">
+                            
+                            <p class="link-text">También podes pagar con Mercado Pago, mandanos el comprobante de pago y te enviamos el producto.</p>
+                            <a href="https://www.mercadopago.com.ar/totp-in-app/validation?transaction_id=bkvzArvyfVW3F7pGHHWiXzlgyz5ogYTf" class="payment-link">Mercado Pago.</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="form-card" class="form-card">
+                <div class="data-person">
+                    <h2 class="title-form">Datos de tu cuenta:</h2>
+                    <div class="dataForm">
+                            <label for="inputName">
+                            Nombre y Apellido:
+                            </label>
+                            <input type="text" id="inputName"class="inputName" maxlength="35">
+                            <small class="small-log"></small>
+                    </div>
+                    <div class="dataForm">
+                            <label for="inputEmail">
+                            Mail
+                            </label>
+                            <input type="email" id="inputEmail" class="inputEmail">
+                            <small class="small-log"></small>
+                    </div>
+                    <div class="dataForm">
+                            <label for="inputpassword">
+                            Contraseña
+                            </label>
+                            <input type="password" id="inputpassword" class="inputpassword">
+                            <small class="small-log"></small>
+                    </div>
+                    </div>
+                </div>
+                <h2 class="title-form">Datos de la Tarjeta:</h2>
+                <div class="numbercard">
+                    <label for="inputNumber">Número de la tarjeta:</label>
+                    <input type="text" id="inputNumber" class="inputNumber" maxlength="19">
+                </div>
+                <div class="data-storeCard">
+                    <div class="data expira">
+                        <label for="selectMonth">Vecimiento de la Tarjeta</label>
+                        <div class="months">
+                            <div class="data-select">
+                                <select name="months" id="selectMonth" class="selectMonths">
+                                    <option disabled selected>Mes</option>
+                                </select>
+                            </div>
+                            <div class="data-select">
+                                <select name="year" id="selectYear" class="selectYear">
+                                    <option disabled selected>Año</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-ccv">
+                        <label for="inputCCV">CCV</label>
+                        <input type="text" id="inputCCV" class="inputCCV" maxlength="5">
+                    </div>
+                </div>
+                <div class="btn-send">
+                    <button id="send"><a href="index.html" class="send">LISTO</a></button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+            <div class="footer-product">
+                <div class="footer-about">
+                    <ul>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li>|</li>
+                        <li><a href="#">Trabajá con Nosotrxs</a></li>
+                        <li>|</li>
+                        <li><a href="#">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copy">   
+                    <p>Copyright © 2022 <a href="https://www.instagram.com/franmotta._/">Juan Francisco Motta</a>.</p>
+                </div>
+            </div>
+    
+    </footer>
+    <script src="https://kit.fontawesome.com/2b2d2d01e5.js" crossorigin="anonymous"></script>
+    <script src="asses/login.js"></script>
+    <script src="asses/validacion.js"></script>
+    <script src="asses/utils.js"></script>
+</body>
+</html>
