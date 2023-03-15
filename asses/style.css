@@ -301,7 +301,7 @@ section{
 }
 /* CARRITO */
 .hero-card { 
-    height: 400px;
+    min-height: 400px;
 }
 
 .conteiner-cart{
