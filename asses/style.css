@@ -729,6 +729,7 @@ section{
 }
 #send {
     border: none;
+    background: none;
 }
 .send{
     background: var(--bg-white2);
