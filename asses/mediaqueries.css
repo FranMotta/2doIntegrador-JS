@@ -195,7 +195,12 @@ padding: 5px;
 }
 
 @media (max-width:400px){
-
+.nav-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 /* carrito */
 .link{
     width: 50px;
